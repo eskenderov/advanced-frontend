@@ -3,3 +3,5 @@ function callConsole() {
 }
 
 callConsole();
+
+document.body.innerHTML = "Hello webpack";
