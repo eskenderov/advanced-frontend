@@ -1,3 +1,10 @@
 import { render } from "react-dom";
 import "./index.scss";
-render(<div>Hello webpack</div>, document.getElementById("root"));
+import { BrowserRouter } from "react-router-dom";
+import { App } from "./App";
+render(
+  <BrowserRouter future={{ v7_startTransition: true }}>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
+);
