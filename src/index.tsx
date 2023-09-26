@@ -1,10 +1,13 @@
 import { render } from "react-dom";
-import "./index.scss";
 import { BrowserRouter } from "react-router-dom";
 import { App } from "./App";
+import "./assets/styles/index.scss";
+import ThemeProvider from "./theme/ThemeProvider";
 render(
   <BrowserRouter future={{ v7_startTransition: true }}>
-    <App />
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
   </BrowserRouter>,
   document.getElementById("root")
 );
